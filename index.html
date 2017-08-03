@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amir's Task Board</title>
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+ 
+ 
+  <div class="container-fluid">
+    <div class="row">
+        <div class="title">
+           <img src="css/pics/title.png" class = "center-block">
+        </div>
+    </div>
+    <div class="row">
+          <div class="col-lg-4 col-lg-offset-3 col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 size">
+            <form action="" method="get" id ="taskForm">
+               
+                <textarea id = "firstFormPart" rows="3" columns = "40" placeholder = "Enter a Task" required></textarea><br/>
+               
+                <input id = "secondFormPart" type="text" name="lastname" size = "12" placeholder="Enter the date" required>
+                  <br/>
+              <input type="Submit" value="Submit" id = "formButton">
+            </form>
+            <p id = "wrongDate">Please use the date format: <b>DD/MM/YYYY</b>, <b>DD.MM.YYYY</b>, or <b>DD-MM-YYYY</b></p>         
+          </div>
+
+ 
+    </div>
+    
+    
+    <div id = "noteArea" class = "row">
+             
+    </div>
+    
+  </div>
+    
+   
+   
+   
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-image: url(pics/tile.jpg);
+}
+
+.title{
+margin-top:20px;
+}
+
+.size{
+    width:660px;
+    height:198px;
+    margin-top:20px;
+    background-image: url(pics/formbg.jpg);
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+#firstFormPart{
+    margin-top: 13px;
+    margin-left: 80px;
+    height: 103px;
+    background: transparent;
+    font-family: 'Marck Script', cursive;
+}
+
+#secondFormPart{
+    margin-top: 24px;
+    margin-left: 81px;
+    background: transparent;
+    height: 30px;
+    font-family: 'Marck Script', cursive;
+}
+
+#formButton{
+    background-color: yellow;
+    border-radius: 8px;
+    box-shadow: 5px 5px 3px #888888;
+    position: relative;
+    bottom: 100px;
+    left: 500px;
+    width: 95px;
+}
+
+#formButton:hover{
+    background-color: lightyellow;
+}
+
+
+.note{
+background-image: url(pics/notebg.png);
+height: 250px;
+width: 200px;
+animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+span{
+    display: none;
+    height: 25px;
+}
+
+.note:hover span{
+    display:block;
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 2em;
+}
+
+.p1{
+    margin-top: 38px;
+    width:160px;
+    height: 165px;
+    word-wrap: break-word;
+    font-weight: 700;
+    overflow-y: auto;
+}
+
+.p2{
+    position: absolute;
+    bottom: 10px;
+}
+
+.removedDiv{
+      opacity:0;
+      transition: opacity 2s;
+      background-image: url(pics/notebg.png);
+      height: 250px;
+      width: 200px;
+}
+
+.glyphicon{
+    display: none;
+}
+
+.glyphicon:hover{
+    color: red;
+    cursor: pointer;
+
+}
+
+::-webkit-input-placeholder { 
+  color: gray;
+    font-size: 25px;
+    font-family: arial;
+}
+
+#wrongDate{
+    width: 285px;
+    color: red;
+    font-size: 15px;
+    position: absolute;
+    left: 376px;
+    bottom: -27px;
+    height: 100px;
+    line-height: 2;
+    visibility: hidden;
+}
